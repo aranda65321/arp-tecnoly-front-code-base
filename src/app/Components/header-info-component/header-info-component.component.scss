@@ -1,0 +1,153 @@
+* {
+  user-select: none;
+  object-fit: scale-down;
+  margin: 0;
+  padding: 0;
+  // transition-duration:0.2s;
+}
+
+.header-info-content {
+  position: absolute;
+  z-index: 3;
+}
+
+
+
+
+
+.btn-header span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.2s;
+}
+
+.btn-header span:after {
+  content: "\00bb";
+  position: absolute;
+  top: 0;
+  right: -20px;
+  transition: 0.2s;
+}
+
+.div-text-content-header-info {
+  padding-top: 15vw;
+  padding-left: 8vw;
+}
+
+.title-header-info {
+  font-family: robotoBold;
+  font-size: 3.6vw;
+  color: white;
+}
+
+.div-header-info {
+  width: 53vw;
+  line-height: 4vw;
+}
+
+.div-description-header-info {
+  width: 50vw;
+}
+
+.description-header-info {
+  font-family: robotoRegular;
+  font-size: 2vw;
+  color: white;
+  line-height: 2.1vw;
+}
+
+.div-buttons-header {
+  padding-top: 5vw;
+}
+
+.btn-header {
+
+  width: 17vw;
+  height: 3vw;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 1.4%;
+  font-size: 1.5vw;
+  font-family: robotoRegular;
+}
+
+.btn-arp {
+  background: rgba($color: #6eafd7, $alpha: 1.0) ;
+  -webkit-box-shadow: inset 0px 0px 15px 0px rgba(20,28,76,1);
+  -moz-box-shadow: inset 0px 0px 15px 0px rgba(20,28,76,1);
+  box-shadow: inset 0px 0px 15px 0px rgba(20,28,76,1);
+  outline: none !important;
+  cursor: pointer;
+  border: none;
+  color: #fff!important;
+  transition: background-color .2s, border .2s;
+font-weight: 500;
+border: 2px solid rgba($color: #141c4c, $alpha: 0.5);
+}
+
+.btn-arp:hover{
+  transition: background-color .2s  ;
+  background: rgba($color: #fff, $alpha: 0.0);
+  border: 2px solid #fff;
+  transition: background-color .2s, border .2s;
+  -webkit-box-shadow: inset 0px 0px 15px 0px rgba(20,28,76,0.5);
+  -moz-box-shadow: inset 0px 0px 15px 0px rgba(20,28,76,0.5);
+  box-shadow: inset 0px 0px 15px 0px rgba(20,28,76,0.5);
+}
+
+
+@media screen and (max-width: 767px) {
+  .div-text-content-header-info {
+    padding-top: 50vw;
+    padding-left: 5vw;
+  }
+
+  .div-header-info {
+    width: 90vw !important;
+    line-height: 12vw !important;
+    text-align: center;
+  }
+
+  .title-header-info {
+    font-size: 10vw;
+  }
+
+  .div-description-header-info {
+    width: 80vw;
+    text-align: center;
+    padding-left: 10vw;
+  }
+
+  .description-header-info {
+    font-size: 6vw;
+    line-height: 6.5vw;
+  }
+
+  .div-buttons-header {
+    padding-top: 10vw;
+    padding-left: 8vw;
+  }
+
+  .btn-header {
+    width: 34vw;
+    height: 12vw;
+    padding-top: 2vw !important;
+    font-size: 5vw;
+  }
+
+  .btn-contact {
+    width: 34vw;
+    height: 6vw;
+    padding-top: 0% !important;
+    font-size: 5vw;
+  }
+
+  .btn-4 {
+    width: 40vw !important;
+  }
+
+  .btn-6 {
+    width: 20vw !important;
+  }
+}

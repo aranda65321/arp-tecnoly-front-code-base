@@ -9,7 +9,24 @@ export class NavbarComponent implements OnInit {
 
   constructor() { }
 
+  collapsed = true;
+
+
+
   ngOnInit(): void {
   }
+
+  toggleCollapsed() {
+    this.collapsed = !this.collapsed;
+  }
+
+  buttonCollapsed() {
+    if (this.collapsed == false) {
+      this.collapsed = !this.collapsed;
+    }
+
+  }
+
+
 
 }

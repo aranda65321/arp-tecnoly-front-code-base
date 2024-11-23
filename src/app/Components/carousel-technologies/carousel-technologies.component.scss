@@ -1,0 +1,160 @@
+*{
+  user-select:none;
+  object-fit: scale-down;
+  margin: 0;
+  padding: 0;
+ // transition-duration:0.2s;
+
+}
+
+.container-carousel {
+  padding-top: 8vw;
+  padding-bottom: 15vw;
+  position: relative;
+  background-color: #efefef;
+  height: 90%;
+}
+
+.child-carousel {
+  position: absolute;
+  left: 2vw;
+  right: 2vw;
+  margin: -25px 0 0 -25px;
+  padding: 0;
+  margin: 0;
+}
+
+.technologies-tittle{
+  font-family: robotoBold;
+  font-size: 72px;
+  color:#3c67a0;
+  padding-bottom: 7.5vw;
+}
+
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.icons-container {
+  width: 100%;
+  display: flex;
+  transition: transform 0.3s ease;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.icon {
+  background-color: #fff;
+  aspect-ratio: 4/3;
+  flex: 0 0 auto;
+  margin-right: 10px;
+  padding-left: 30px;
+  padding-top: 60px;
+  padding-bottom: 98px;
+  border-style: solid;
+  border-color: #e8e8e8;
+  width: 100%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: 0.2s;
+
+}
+
+.full-icon{
+  margin-left: 2.5vw;
+  margin-right: 2.5vw;
+}
+
+.icon:hover{
+    width: 100%;
+    box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 29px 0px;
+}
+
+.icon img {
+  position: relative;
+  top: -45px;
+  right: 15px;
+  height: 75px;
+}
+
+.icon h2 {
+  font-family: robotoBold;
+  font-size: 47px;
+  color:#3c67a0;
+  position: relative;
+
+}
+.icon h3 {
+  font-family: robotolight;
+  font-size: 23px;
+  color:#2b2b2b;
+  position: relative;
+
+}
+
+.icon h4 {
+  font-family: robotolight;
+  font-size: 23px;
+  color:#7c7c7c;
+  position: relative;
+
+}
+
+
+
+
+.prev-btn{
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  background-image: url("/assets/img/arrow 2.png");
+  background-color: rgba($color: #000000, $alpha: 0.0);
+  background-size: 40px;
+  background-repeat: no-repeat;
+  border: none;
+
+  font-size: 24px;
+  cursor: pointer;
+}
+.next-btn {
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  background-image: url("/assets/img/arrow 1.png");
+  background-size: 40px;
+  background-repeat: no-repeat;
+  border: none;
+  background-color: rgba($color: #000000, $alpha: 0.0);
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+@media screen and (max-width: 767px) {
+
+  .technologies-tittle{
+    font-family: robotoBold;
+    font-size: 60px;
+    line-height:72px;
+    color:#3c67a0;
+  }
+
+  .container-carousel {
+
+    padding-bottom: 5vw;
+
+  }
+
+}
